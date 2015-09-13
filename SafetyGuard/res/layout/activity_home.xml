@@ -3,11 +3,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-    <TextView 
+
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="主界面"
-        android:textSize="20dp"/>
+        android:layout_height="100dp"
+        android:background="@drawable/blue_bkg" >
+
+        <ImageView
+            android:id="@+id/home_iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/heima" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/home_iv_logo"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/home_tv_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="黑马手机安全卫士"
+                android:textSize="18sp" />
+
+            <com.wss.safetyguard.customview.FocusStraightTextView
+                android:id="@+id/home_tv_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="黑马手机安全卫士黑马手机安全卫士黑马手机安全卫士"
+                android:textColor="#0000ff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/home_iv_setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/setting" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/home_gv_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:horizontalSpacing="4dip"
+        android:numColumns="2"
+        android:verticalSpacing="4dip" >
+    </GridView>
 
 </LinearLayout>

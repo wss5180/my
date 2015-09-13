@@ -8,5 +8,23 @@
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- API 14 theme customizations can go here. -->
     </style>
+    
+    <style name="title_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60dip</item>
+        <item name="android:background">@drawable/blue_bkg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="security_desc_style">
+        <item name="android:drawableLeft">@drawable/dialog_title_default_icon</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:drawablePadding">10dip</item>
+        <item name="android:layout_margin">5dip</item>
+    </style>
 
 </resources>
